@@ -10,16 +10,16 @@
     http://www.springframework.org/schema/tx/spring-tx.xsd">
 
 
-	<context:component-scan base-package="*" />
-	<context:annotation-config/>
+	<!--  context:component-scan base-package="*" /-->
+	<!--  context:annotation-config/-->
 
 
 	<bean id="dataSource" class="org.apache.commons.dbcp.BasicDataSource"
 		destroy-method="close">
 		<property name="driverClassName" value="com.mysql.jdbc.Driver" />
-		<property name="url" value="jdbc:mysql://localhost:3306/test1" />
+		<property name="url" value="jdbc:mysql://localhost:3306/hibernate" />
 		<property name="username" value="root" />
-		<property name="password" value="admin" />
+		<property name="password" value="" />
 	</bean>
  
  
@@ -40,6 +40,25 @@
             </props>
         </property>
     </bean>
+    
+    <bean id="dummyAlumnoDao" class="persistence.impl.DummyAlumnoDao" />
+    
+    
+    <bean id="alumnoDao" class="persistence.impl.HbmAlumnoDao" >
+    	<constructor-arg>
+    		<ref bean="sessionFactory"/>
+    	</constructor-arg>
+    </bean>
+    
+    <bean id="carreraDao" class="persistence.impl.HbmCarreraDao" >
+        <constructor-arg>
+    		<ref bean="sessionFactory"/>
+    	</constructor-arg>
+    </bean>
+ 
+ 	<bean id="alumnoBusiness" class="business.impl.AlumnoBusinessImpl">
+ 		<property name="alumnoDao" ref="alumnoDao" /> 
+ 	</bean>
  
     <tx:annotation-driven />
     
