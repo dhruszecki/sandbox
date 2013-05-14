@@ -1,0 +1,13 @@
+/home/dario/dev/sandbox/springmvc-hibernate-basic/src/main/java/persistence/Dao.java
+/home/dario/dev/sandbox/springmvc-hibernate-basic/src/main/java/business/AlumnoBusiness.java
+/home/dario/dev/sandbox/springmvc-hibernate-basic/src/main/java/model/Alumno.java
+/home/dario/dev/sandbox/springmvc-hibernate-basic/src/main/java/persistence/impl/HbmCarreraDao.java
+/home/dario/dev/sandbox/springmvc-hibernate-basic/src/main/java/model/Carrera.java
+/home/dario/dev/sandbox/springmvc-hibernate-basic/src/main/java/app/StartApp.java
+/home/dario/dev/sandbox/springmvc-hibernate-basic/src/main/java/persistence/impl/DummyAlumnoDao.java
+/home/dario/dev/sandbox/springmvc-hibernate-basic/src/main/java/persistence/impl/HbmAlumnoDao.java
+/home/dario/dev/sandbox/springmvc-hibernate-basic/src/main/java/persistence/AlumnoDao.java
+/home/dario/dev/sandbox/springmvc-hibernate-basic/src/main/java/controller/AlumnoController.java
+/home/dario/dev/sandbox/springmvc-hibernate-basic/src/main/java/business/impl/AlumnoBusinessImpl.java
+/home/dario/dev/sandbox/springmvc-hibernate-basic/src/main/java/persistence/CarreraDao.java
+/home/dario/dev/sandbox/springmvc-hibernate-basic/src/main/java/persistence/impl/AbstractHbmDao.java
